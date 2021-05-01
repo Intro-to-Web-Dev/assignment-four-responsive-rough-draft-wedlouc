@@ -1,0 +1,156 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --bg-color: #2e3440;
+    --bg-color2: #3b4252;
+    --fg-color: #eceff4;
+    --fg-color2: #d8dee9;
+    --highlight-color: #88c0d0;
+    --blue: #5e81ac;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header{
+    background-color: var(--bg-color2);
+    min-height: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+h1{
+    color: var(--fg-color);
+    font-size: 48px;
+    padding: 24px;
+}
+nav{
+    display: flex;
+}
+nav a{
+    color: var(--fg-color);
+    text-decoration: none;
+    font-size: 24px;
+    padding: 36px;
+    text-align: center;
+}
+nav a:hover{
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
+}
+nav .material-icons, .index-return .material-icons{
+    height: 100%;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+main{
+    padding: 16px;
+    flex-grow: 1;
+}
+#content{
+    background-color: var(--fg-color);
+    max-width: 1024px;
+    margin: auto;
+    padding: 16px;
+    border-radius: 8px;
+}
+h2{
+    font-size: 32px;
+    text-align: center;
+    color: var(--bg-color);
+    line-height: 1.5em;
+}
+p{
+    line-height: 1.5em;
+    font-size: 16px;
+    color: var(--bg-color2);
+}
+.listing{
+    margin: 16px 0px 16px 0px;
+}
+h3, .step{
+    font-size: 24px;
+    color: var(--bg-color);
+}
+.substep{
+    list-style: lower-alpha;
+}
+h4, .substep{
+    font-size: 18px;
+    color: var(--bg-color);
+}
+ol{
+    margin-left: 2em;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+}
+.listing-description{
+    margin-left: 16px;
+}
+.listing-credit{
+    color: var(--bg-color2);
+}
+footer{
+    text-align: center;
+    width: 100%;
+    padding: 16px 0px 16px 0px;
+    color: var(--fg-color2);
+}
+#tutorial-header{
+    justify-content: center;
+}
+.tutorial-section{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.tutorial-content h2{
+    text-align: left;
+}
+code{
+    background-color: var(--fg-color2);
+    border: 1px solid #4c566a;
+    border-radius: 3px;
+    padding: 2px;
+    margin-left: 2em;
+    line-height: 3em;
+    
+}
+@media only screen and (max-width: 1128px) {
+    nav{
+        margin: auto;
+        width: 100%;
+    }
+    nav a{
+        flex-grow: 1;
+        padding: 24px;
+    }
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+  }
+@media only screen and (max-width: 728px) {
+    nav{
+        margin: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav a{
+        text-align: center;
+        padding: 18px;
+    }
+    main{
+        padding: 0;
+    }
+    #content{
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Louis' Tutorials - Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header id="tutorial-header">
+            <h1>How To Use The Pacman Package Manager</h1>
+        </header>
+        <main>
+            <div id="content" class="tutorial-content">
+                <section class="tutorial-section">
+                    <h2>Introduction</h2>
+                    <p>Pacman is the package manager used by Arch Linux and many of its derivatives.  While it is rightfully praised for its speed and versatility, its somewhat unintuitive command structure may make for a steep learning curve for some users.  In this guide, we will learn some of the most essential pacman commands to get you started.</p>
+                    <p>Note that most of these command need to be run as root, so either precede them with sudo, or login as root with the su command.</p>
+                </section>
+                <section class="tutorial-section">
+                    <h2>Search For Packages</h2>
+                    <p>To search for packages, use the following syntax</p>
+                    <code>pacman -Ss [search query]</code>
+                    <p>This will tell pacman to search the repositories for anything that matches your search query</p>
+                </section>
+                <section class="tutorial-section">
+                    <h2>Install Packages</h2>
+                    <p>To install packages, use the following syntax</p>
+                    <code>pacman -S [package name]</code>
+                    <p>Additionally, you can add as many package names as you want to this command and it will install all of them.</p>    
+                </section>
+                <section class="tutorial-section">
+                    <h2>Remove Packages</h2>
+                    <p>The most effective way to remove a package is with the following syntax</p>
+                    <code>pacman -Rns [package name]</code>
+                    <p>This will remove the package, all of its dependencies, and some of the its configuration files.</p>    
+                </section>
+                <section class="tutorial-section">
+                    <h2>Upgrade Packages</h2>
+                    <p>To upgrade all the packages on your system to the latest available versions, use the following command.</p>
+                    <code>pacman -Syu</code>
+                </section>
+            </div>
+        </main>
+        <footer>Updated 2021-01-01 | This work is licensed under CC BY-NC 4.0</footer>
+    </body>
+</html>

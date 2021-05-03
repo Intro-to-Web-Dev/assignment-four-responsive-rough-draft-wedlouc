@@ -32,6 +32,9 @@ h1{
     font-size: 48px;
     padding: 24px;
 }
+h3{
+    text-align: center;
+}
 nav{
     display: flex;
 }
@@ -104,6 +107,22 @@ footer{
     padding: 16px 0px 16px 0px;
     color: var(--fg-color2);
 }
+#home-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-flex-item{
+    flex: 1 1 300px;
+    padding: 16px;
+}
+.home-flex-item div{
+    margin: 0.5em;
+}
+.home-flex-item ul{
+    padding-left: 1em;
+    line-height: 1.5em;
+    color: var(--bg-color2);
+}
 #tutorial-header{
     justify-content: center;
 }
@@ -130,7 +149,7 @@ code{
     }
     nav a{
         flex-grow: 1;
-        padding: 24px;
+        padding: 18px;
     }
     h1{
         width: 100%;
@@ -145,12 +164,18 @@ code{
     }
     nav a{
         text-align: center;
-        padding: 18px;
+        padding: 12px;
     }
     main{
         padding: 0;
     }
     #content{
         border-radius: 0;
+    }
+    h3{
+        text-align: left;
+    }
+    .home-flex-item{
+        flex-basis: 350px;
     }
 }

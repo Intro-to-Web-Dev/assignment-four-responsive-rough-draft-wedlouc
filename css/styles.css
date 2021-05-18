@@ -179,6 +179,26 @@ code{
     line-height: 3em;
     
 }
+.back-button{
+    background-color: var(--blue);
+    text-decoration: none;
+    color: var(--fg-color);
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+.back-button .material-icons{
+    height: 100%;
+    vertical-align: middle;
+    font-size: 18px;
+}
+.back-button:hover{
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
+}
 @media only screen and (max-width: 1128px) {
     nav{
         margin: auto;
